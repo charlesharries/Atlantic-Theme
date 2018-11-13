@@ -1,4 +1,4 @@
-# Darkmatter
+# Atlantic
 
 Custom color scheme for Sublime Text 3. And 2, I guess. Probably.
 
@@ -6,7 +6,7 @@ Custom color scheme for Sublime Text 3. And 2, I guess. Probably.
 
 ### Themes
 
-#### Darkmatter
+#### Atlantic
 
 Originally based on Patrick Muller's [Darkmatter](https://github.com/patrickemuller/Sublime-Darkmatter-Theme), itself based on [TronLight](http://colorsublime.com/theme/TronLight) and [Spacegray](https://github.com/kkga/spacegray).
 
@@ -16,8 +16,8 @@ Originally based on Patrick Muller's [Darkmatter](https://github.com/patrickemul
 
 #### Manually (since it isn't on Package Control)
 
-1. [Download the .zip](https://github.com/charlesharries/Sublime-Dark-Matter-Theme/archive/master.zip)
-2. Unzip and rename the folder to `Theme - Darkmatter`
+1. [Download the .zip](https://github.com/charlesharries/Atlantic-Theme/archive/master.zip)
+2. Unzip and rename the folder to `Atlantic-Theme`
 3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
 
 ***
