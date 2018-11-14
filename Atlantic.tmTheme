@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><!--
 ======================================================================
-Darkmatter
+Atlantic
 ======================================================================
-A Sublime Text 2 / Textmate theme.
-Copyright (c) 2015 Patrick Müller.
+A Sublime Text 3 Theme
 Released under the MIT License <http://opensource.org/licenses/MIT>
 ======================================================================
 -->
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Darkmatter</string>
+	<string>Atlantic</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -94,6 +92,18 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 			<dict>
 				<key>foreground</key>
 				<string>#6ee2ff</string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>This</string>
+			<key>scope</key>
+			<string>variable.language.this</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#865add</string>
 			</dict>
 		</dict>
 		<dict>
@@ -295,19 +305,7 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<key>foreground</key>
 				<string>#267fb5</string>
 			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library variable</string>
-			<key>scope</key>
-			<string>support.other.variable</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-			</dict>
-		</dict>
-		<dict>
+		</dict>		<dict>
 			<key>name</key>
 			<string>Invalid</string>
 			<key>scope</key>
@@ -414,35 +412,39 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
     -->
     <dict>
       <key>scope</key>
+      <string>meta.paragraph.markdown</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#effbff</string>
+      </dict>
+    </dict>
+
+    <dict>
+      <key>scope</key>
       <string>punctuation.definition.heading.markdown, markup.heading.1.markdown, markup.heading.2.markdown, markup.heading.markdown</string>
       <key>settings</key>
       <dict>
-        <key>fontStyle</key>
-        <string>underline</string>
         <key>foreground</key>
-        <string>#ffffff</string>
+        <string>#effbff</string>
+        <key>background</key>
+        <string>#1b3763</string>
+        <key>fontStyle</key>
+        <string>bold</string>
       </dict>
     </dict>
     <dict>
         <key>name</key>
         <string>Block code</string>
         <key>scope</key>
-        <string>markup.raw.block.markdown, markup.raw.block.fenced.markdown, markup.raw.inline.content.markdown, punctuation.definition.raw.markdown</string>
+        <string>markup.raw.block.markdown, markup.raw.block.fenced.markdown, markup.raw.inline.content.markdown, punctuation.definition.raw.markdown,
+        markup.raw.code-fence.markdown-gfm</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#4cbbff</string>
+          <string>#d0dfe6</string>
         </dict>
     </dict>
-    <dict>
-        <key>scope</key>
-        <string>markup.italic.markdown, markup.bold.markdown, markup.bold_italic.markdown</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#95CC5E</string>
-        </dict>
-    </dict> 
     <dict>
         <key>scope</key>
         <string>markup.italic.markdown</string>
