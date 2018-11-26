@@ -406,6 +406,23 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#E6DB74</string>
 			</dict>
 		</dict>
+
+		<!-- GraphQL -->
+		<dict>
+			<key>name</key>
+			<string>GraphQL comments</string>
+			<key>scope</key>
+			<string>string.quoted.double.graphql, punctuation.definition.string.end.graphql, punctuation.definition.string.begin.graphql 
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#516a88</string>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+
 		
     <!-- 
       MarkdownMod
