@@ -161,6 +161,27 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 		</dict>
 
 		<!--
+			SEA GREEN AND BOLD (LIKE ALL KEYS)
+			CSS property names (e.g. margin-right, display)
+		-->
+		<dict>
+			<key>name</key>
+			<string>Media Queries</string>
+			<key>scope</key>
+			<string>
+				meta.property-name.css support.type.property-name.css,
+				punctuation.separator.key-value.css
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#0087A0</string>
+			</dict>
+		</dict>
+
+		<!--
 			FIRE ORANGE
 			CSS pseudoelements
 		-->
