@@ -134,10 +134,20 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 			<string>keyword</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#779ab0</string>
 			</dict>
 		</dict>
+
+		<!-- ==============================
+			CSS RULES
+		=============================== -->
+		<!--
+			GREEN
+			Anything with an @ in it like @font-face and @media
+		-->
 		<dict>
 			<key>name</key>
 			<string>Media Queries</string>
@@ -149,6 +159,11 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#95CC5E</string>
 			</dict>
 		</dict>
+
+		<!--
+			FIRE ORANGE
+			CSS pseudoelements
+		-->
 		<dict>
 			<key>name</key>
 			<string>CSS Pseudoclasses</string>
@@ -160,6 +175,11 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#ff4800</string>
 			</dict>
 		</dict>
+		
+		<!--
+			SKY BLUE
+			CSS !important
+		-->
 		<dict>
 			<key>name</key>
 			<string>CSS Important</string>
@@ -171,6 +191,11 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#6ee2ff</string>
 			</dict>
 		</dict>
+		
+		<!--
+			LIGHT BLUE-GREY
+			CSS classes
+		-->
 		<dict>
 			<key>name</key>
 			<string>CSS Class Name</string>
@@ -182,9 +207,14 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#a9bfcd</string>
 			</dict>
 		</dict>
+		
+		<!--
+			PURPLE
+			CSS ids
+		-->
 		<dict>
 			<key>name</key>
-			<string>CSS Class Name</string>
+			<string>CSS IDs</string>
 			<key>scope</key>
 			<string>entity.other.attribute-name.id.css</string>
 			<key>settings</key>
@@ -193,6 +223,11 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#9d7fd8</string>
 			</dict>
 		</dict>
+
+
+		<!-- =================================
+		MORE RANDOM STUFF
+		================================== -->
 		<dict>
 			<key>name</key>
 			<string>Storage</string>
@@ -219,45 +254,34 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#267fb5</string>
 			</dict>
 		</dict>
+
+		<!-- 
+			FIRE ORANGE
+			Class names, whether inherited or not
+		-->
 		<dict>
 			<key>name</key>
-			<string>Class name</string>
+			<string>Class names</string>
 			<key>scope</key>
-			<string>entity.name.class, variable.type</string>
+			<string>
+				entity.name.class,
+				variable.type,
+				support.class.builtin,
+				entity.other.inherited-class
+			</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>bold italic</string>
 				<key>foreground</key>
-				<string>#95CC5E</string>
+				<string>#ff4800</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Class name</string>
-			<key>scope</key>
-			<string>support.class.builtin</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#95CC5E</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Inherited class</string>
-			<key>scope</key>
-			<string>entity.other.inherited-class</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic underline</string>
-				<key>foreground</key>
-				<string>#95CC5E</string>
-			</dict>
-		</dict>
+
+		<!--
+			WHITE TEXT W/ DARK BLUE BACKGROUND
+			Function names, white with blue background
+		-->
 		<dict>
 			<key>name</key>
 			<string>Function name</string>
@@ -273,6 +297,7 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#F8F8F0</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Function argument</string>
@@ -286,6 +311,7 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#95CC5E</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Tag name</string>
@@ -299,6 +325,7 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#F8F8F0</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Tag attribute</string>
@@ -312,37 +339,34 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#0087A0</string>
 			</dict>
 		</dict>
+
+		<!-- Function call, strangely not handled
+			by 'meta.function-call' -->
 		<dict>
 			<key>name</key>
-			<string>Library function</string>
+			<string>Function calls</string>
 			<key>scope</key>
-			<string>support.function</string>
+			<string>
+				support.function,
+				variable.function
+			</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#267fb5</string>
+				<string>#779ab0</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library constant</string>
-			<key>scope</key>
-			<string>support.constant</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string>
-				<key>foreground</key>
-				<string>#267fb5</string>
-			</dict>
-		</dict>
+
+		<!-- Library class/type means stuff like
+			'document' and 'window' in JS -->
 		<dict>
 			<key>name</key>
 			<string>Library class/type</string>
 			<key>scope</key>
-			<string>support.type, support.class</string>
+			<string>
+				support.type,
+				support.class
+			</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -351,6 +375,8 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#267fb5</string>
 			</dict>
 		</dict>
+
+		<!-- Invalid stuff -->
 		<dict>
 			<key>name</key>
 			<string>Invalid</string>
@@ -379,11 +405,17 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#F8F8F0</string>
 			</dict>
 		</dict>
+
+		<!-- JSON/Object keys -->
 		<dict>
 			<key>name</key>
 			<string>JSON Key</string>
 			<key>scope</key>
-			<string>meta.structure.dictionary.key.json string.quoted.double.json, meta.structure.dictionary.key.json punctuation.definition.string.begin, meta.structure.dictionary.key.json punctuation.definition.string.end</string>
+			<string>
+				meta.structure.dictionary.key.json string.quoted.double.json,
+				meta.structure.dictionary.key.json punctuation.definition.string.begin,
+				meta.structure.dictionary.key.json punctuation.definition.string.end
+			</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -396,7 +428,14 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 			<key>name</key>
 			<string>Object Key</string>
 			<key>scope</key>
-			<string>constant.other.object.key, constant.other.object.key string.unquoted.label,  meta.object-literal.key.js string.quoted.double.js, meta.object-literal.key.js punctuation.definition.string.begin, meta.object-literal.key.js punctuation.definition.string.end, text.html.basic meta.object-literal.key.js</string>
+			<string>
+				constant.other.object.key, 
+				constant.other.object.key string.unquoted.label,
+				meta.object-literal.key.js string.quoted.double.js,
+				meta.object-literal.key.js punctuation.definition.string.begin,
+				meta.object-literal.key.js punctuation.definition.string.end,
+				text.html.basic meta.object-literal.key.js
+			</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -405,6 +444,27 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 				<string>#0087A0</string>
 			</dict>
 		</dict>
+		
+		<!-- Object property (e.g. .duration, .name)
+			Include 'meta.function-call' since Sublime
+			seems to think that's what properties are
+			sometimes -->
+		<dict>
+			<key>name</key>
+			<string>Object property</string>
+			<key>scope</key>
+			<string>
+				meta.property,
+				meta.function-call
+			</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#aec2e0</string>
+			</dict>
+		</dict>
+
+		<!-- Git stuff, not sure if this even works -->
 		<dict>
 			<key>name</key>
 			<string>diff.header</string>
@@ -497,7 +557,6 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
         <string>#effbff</string>
       </dict>
     </dict>
-
     <dict>
       <key>scope</key>
       <string>punctuation.definition.heading.markdown, markup.heading.1.markdown, markup.heading.2.markdown, markup.heading.markdown</string>
@@ -525,10 +584,12 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 			</dict>
 		</dict>
     <dict>
-        <key>name</key>
-        <string>Block code</string>
-        <key>scope</key>
-        <string>markup.raw.block.markdown, markup.raw.block.fenced.markdown, markup.raw.inline.content.markdown, punctuation.definition.raw.markdown, markup.raw.code-fence.markdown-gfm</string>
+      <key>name</key>
+      <string>Block code</string>
+      <key>scope</key>
+      <string>
+      	markup.raw.block.markdown, markup.raw.block.fenced.markdown, markup.raw.inline.content.markdown, punctuation.definition.raw.markdown, markup.raw.code-fence.markdown-gfm
+      </string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -564,7 +625,9 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>string.other.link.title.markdown, string.other.link.description.markdown</string>
+			<string>
+				string.other.link.title.markdown, string.other.link.description.markdown
+			</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
