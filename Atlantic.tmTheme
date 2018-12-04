@@ -480,7 +480,9 @@ Released under the MIT License <http://opensource.org/licenses/MIT>
 			<key>scope</key>
 			<string>
 				meta.property,
-				meta.function-call
+				meta.function-call,
+				meta.property.object,
+				meta.property variable.other
 			</string>
 			<key>settings</key>
 			<dict>
